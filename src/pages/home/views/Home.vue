@@ -1,6 +1,7 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
+    <h2 @click="toAbout">homewwwww</h2>
+    <img alt="Vue logo" src="../../../assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
@@ -11,6 +12,12 @@ import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
   name: 'home',
+    methods:{
+	    toAbout(){
+	    	alert(1)
+	    	window.location.href='http://localhost:8080/about.html'
+        }
+    },
   components: {
     HelloWorld
   }
